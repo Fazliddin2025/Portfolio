@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0e0e10;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #00bfff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding-top: 70px;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-text span {
+  color: #00bfff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #00bfff;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0091c2;
+}
+
+/* About */
+.about, .projects, .contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #1a1a1d;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 15px 0 5px;
+  color: #00bfff;
+}
+
+.project-card p {
+  padding: 0 10px 20px;
+}
+
+/* Contact */
+.socials a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #00bfff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
